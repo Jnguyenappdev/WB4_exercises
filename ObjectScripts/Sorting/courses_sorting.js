@@ -42,6 +42,30 @@ let courses = [
 ];
 
 // sort by title
+
+//use a or b but can be anything
+//ben's  demo of exercise
+
+// the general bases
+
+// function sortCourses(a, b) {
+//   const IN_ORDER = "in_order";            will be numbers  -1
+//   const SAME = "same";                    will be numbers  0
+//   const OUT_OF_ORDER = "out_of_order";    will be numbers  1
+
+//   if (a.Title < b.Title) {
+//     return IN_ORDER;
+//   }
+//   if (b.Title < a.Title) {
+//     return OUT_OF_ORDER;
+//   }
+//   return SAME;
+// }
+
+// to make decending inseat of ascending: you can reverse sort by chaning the return values 
+//       or change the condition by changing the signs
+
+//courses.sort : compares and can pass in function at which could loop over them
 courses.sort(function (a, b) {
   if (a.Title < b.Title) {
     return -1;

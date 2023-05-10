@@ -16,6 +16,7 @@ products.push({ product: "Sour Patch Kids", price: 3.5 });
 console.log(products);
 
 let numProducts = products.length;
+
 products.sort(function (a, b) {
   if (a.product < b.product) {
     return -1;
@@ -29,11 +30,12 @@ products.sort(function (a, b) {
 for (let i = 0; i < numProducts; i++) {
   console.log(products[i].product);
 }
+
 console.log("-------------------------------");
 products.sort(function (a, b) {
-  if (a.product > b.product) {
+  if (a.price > b.price) {
     return -1;
-  } else if (a.product == b.product) {
+  } else if (a.price == b.price) {
     return 0;
   } else {
     return 1;
@@ -41,5 +43,5 @@ products.sort(function (a, b) {
 });
 
 for (let i = 0; i < numProducts; i++) {
-  console.log(products[i].product);
+  console.log(products[i].product, products[i].price.toFixed(2));
 }
